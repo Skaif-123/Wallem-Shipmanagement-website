@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detailed services</title>
     <link rel="stylesheet" href="./output.css">
 
@@ -12,7 +13,7 @@
     <div class="container mx-auto flex justify-between items-center">
         <h1 class="pagetitle text-xl md:text-2xl font-bold">Wallem Shipmangement</h1>
         <ul class="hidden sm:flex space-x-6">
-            <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
             <li><a href="about.html" class="hover:text-gray-300">About</a></li>
             <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
             <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
@@ -30,24 +31,24 @@
 </nav>
 
 <!--main secton-->
-<section class="bg-white pt-15 pb-16">
-    <div class="container md:mx-auto ">
-        <h2 class="text-4xl text-blue-900 font-bold cursor-pointer mb-4">Detailed Services</h2>
+<section class="bg-white pt-20 pb-16">
+    <div class="container  md:mx-auto ">
+        <h2 class=" text-2xl  md:text-4xl text-blue-900 font-bold cursor-pointer mb-4 text-center">Detailed Services</h2>
 
-        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-auto">
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-3">
             <h3 class="text-xl font-bold cursor-pointer text-blue-800  hover:text-red-500" onclick="toggleServiceDetails(this)">Marine Logistics</h3>
             <p class="hidden mt-2 text-gray-700">Providing seamless logistics solutions for global marine operations, ensuring timely
                 delivery and efficient cargo handling at every port. Our key services include cargo transportation and
                 management, port handling and customs clearance, and supply chain optimization.</p>
         </div>
-        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-auto">
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-3">
             <h3 class="text-xl font-bold text-blue-800 cursor-pointer hover:text-red-500" onclick="toggleServiceDetails(this)">Ship Management</h3>
             <p class="hidden mt-2 text-gray-700">
                 Comprehensive ship management services, focusing on safety, compliance, and operational excellence to
                 keep your fleet in top condition. Our key services include crew recruitment and training, technical
                 management and maintenance, and safety inspections and compliance audits.</p>
         </div>
-        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-auto">
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl mx-3">
             <h3 class="text-xl text-blue-800 font-bold cursor-pointer hover:text-red-500" onclick="toggleServiceDetails(this)">Lifeboat Maintenance</h3>
             <p class="hidden mt-2 text-gray-700">
                 Ensuring the safety of life at sea with certified lifeboat inspections, repairs, and maintenance,
@@ -64,6 +65,21 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.querySelector('nav ul');
+        let navnaming = document.querySelectorAll('li a');
+        const titlename=document.querySelector('.pagetitle');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('block');
+        titlename.classList.toggle('hidden');
+
+        navnaming.forEach(links=>{
+            links.classList.toggle('text-xl');
+            links.classList.toggle('font-bold');
+            links.classList.toggle('text-center');
+        })
+    })
+</script>
 </body>
 </html>

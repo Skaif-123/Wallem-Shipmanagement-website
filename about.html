@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Wallem Shipmanagement</title>
     <link rel="stylesheet" href="./output.css">
 </head>
@@ -64,6 +65,26 @@
         <p>&copy;2025 Wallem ShipManagement India pvt Ltd.</p>
     </div>
 </footer>
-<script src="script.js"></script>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.querySelector('nav ul');
+        let navnaming = document.querySelectorAll('li a');
+        const titlename=document.querySelector('.pagetitle');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('block');
+        titlename.classList.toggle('hidden');
+
+        navnaming.forEach(links=>{
+            links.classList.toggle('text-xl');
+            links.classList.toggle('font-bold');
+            links.classList.toggle('text-center');
+        })
+    })
+    // working on services.html
+    function toggleServiceDetails(element){
+        const details=element.nextElementSibling;
+        details.classList.toggle('hidden');
+    }
+</script>
 </body>
 </html>

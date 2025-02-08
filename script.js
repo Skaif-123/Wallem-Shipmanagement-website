@@ -24,9 +24,5 @@ document.querySelector('a[href="#home"]').addEventListener('click',function (e){
     document.querySelector('#home').scrollIntoView({behavior:'smooth'});
 });
 
-// working on services.html
-function toggleServiceDetails(element){
-    const details=element.nextElementSibling;
-    details.classList.toggle('hidden');
-}
+
 
