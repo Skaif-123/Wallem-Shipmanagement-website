@@ -7,19 +7,24 @@
 </head>
 <body class="bg-gray-100 font-sans">
 <!-- Navigation -->
-<nav class="bg-gradient-to-r from-blue-800 to-blue-600 text-white p-4 w-full sticky top-0 z-10">
+<nav class="bg-blue-800 text-white p-4 w-full fixed top-0 z-10">
     <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center gap-4">
-            <img src="./img/wallem.JPG" alt="company logo"
-                 class="rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-lg w-20 h-20">
-            <h1 class="text-4xl font-bold">Wallem Shipmangement</h1>
-        </div>
-        <ul class="hidden md:flex space-x-6 text-lg font-medium">
-            <li><a href="index.html" class="transition duration-300 hover:text-gray-300">Home</a></li>
-            <li><a href="about.html" class="transition duration-300 hover:text-gray-300">About</a></li>
-            <li><a href="services.html" class="transition duration-300 hover:text-gray-300">Services</a></li>
-            <li><a href="contact.html" class="transition duration-300 hover:text-gray-300">Contact</a></li>
+        <h1 class="pagetitle text-xl md:text-2xl font-bold">Wallem Shipmangement</h1>
+        <ul class="hidden sm:flex space-x-6">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+            <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
         </ul>
+
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+
+        </button>
+
     </div>
 </nav>
 
@@ -27,7 +32,7 @@
 <section class="bg-white pt-20 pb-16">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center mb-8 text-blue-800">Our Story</h2>
-        <p class="text-gray-700 leading-relaxed text-center mb-12 max-w-3xl mx-auto">
+        <p class="text-gray-700 leading-relaxed text-center mb-12 max-w-3xl mx-auto sm:px-2  ">
             Founded over two decades ago, Wallem Shipmanagement began as a modest venture with a single vessel and a bold
             vision—to redefine maritime excellence through unwavering commitment and innovation. From its humble beginnings,
             the company has evolved into a leading name in the global shipping industry, managing a diverse fleet of state-of-the-art
@@ -54,9 +59,9 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-blue-800 text-white py-6">
+<footer class="bg-blue-800 text-white py-6 relative bottom-0 w-full">
     <div class="container mx-auto text-center">
-        <p>&copy;2025 Wallem ShipManagement India Pvt Ltd. All Rights Reserved</p>
+        <p>&copy;2025 Wallem ShipManagement India pvt Ltd.</p>
     </div>
 </footer>
 <script src="script.js"></script>
