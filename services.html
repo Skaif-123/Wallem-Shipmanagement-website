@@ -6,6 +6,9 @@
     <title>Detailed services</title>
     <link rel="stylesheet" href="./output.css">
     <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const menu = document.querySelector('nav ul');
             let navnaming = document.querySelectorAll('li a');
@@ -20,14 +23,16 @@
                 links.classList.toggle('text-center');
             })
         })
+        });
         function toggleServiceDetails(element){
             const details=element.nextElementSibling;
             details.classList.toggle('hidden');
             details.classList.toggle('block');
         }
+
     </script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans  w-full h-screen">
 
 <nav class="bg-blue-800 text-white p-4 w-full sticky top-0 z-10">
     <div class="container mx-auto flex justify-between items-center">
@@ -78,12 +83,10 @@
 </section>
 
 <!--Footer-->
-<footer class="bg-blue-800 text-white py-6 absolute bottom-0 w-full">
+<footer class="bg-blue-800 text-white py-6 fixed bottom-0 w-full ">
     <div class="container mx-auto text-center">
         <p>&copy;2025 Wallem ShipManagement India pvt Ltd.</p>
     </div>
 </footer>
-
-
 </body>
 </html>
