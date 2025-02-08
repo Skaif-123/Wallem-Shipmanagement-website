@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed services</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<nav class="bg-gradient-to-r from-blue-800 to-blue-600 text-white p-4 w-full sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="./img/wallem.JPG" alt="company logo"
+                 class="rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-lg w-20 h-20">
+            <h1 class="text-4xl font-bold">Wallem Shipmangement</h1>
+        </div>
+        <ul class="hidden md:flex space-x-6 text-lg font-medium">
+            <li><a href="index.html" class="transition duration-300 hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="transition duration-300 hover:text-gray-300">About</a></li>
+            <li><a href="services.html" class="transition duration-300 hover:text-gray-300">Services</a></li>
+            <li><a href="contact.html" class="transition duration-300 hover:text-gray-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--main secton-->
+<section class="bg-white pt-15 pb-16">
+    <div class="container mx-auto">
+        <h2 class="text-4xl text-blue-900 font-bold cursor-pointer mb-4">Detailed Services</h2>
+
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-xl font-bold cursor-pointer text-blue-800  hover:text-red-500" onclick="toggleServiceDetails(this)">Marine Logistics</h3>
+            <p class="hidden mt-2 text-gray-700">Providing seamless logistics solutions for global marine operations, ensuring timely
+                delivery and efficient cargo handling at every port. Our key services include cargo transportation and
+                management, port handling and customs clearance, and supply chain optimization.</p>
+        </div>
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-xl font-bold text-blue-800 cursor-pointer hover:text-red-500" onclick="toggleServiceDetails(this)">Ship Management</h3>
+            <p class="hidden mt-2 text-gray-700">
+                Comprehensive ship management services, focusing on safety, compliance, and operational excellence to
+                keep your fleet in top condition. Our key services include crew recruitment and training, technical
+                management and maintenance, and safety inspections and compliance audits.</p>
+        </div>
+        <div class="service-item bg-blue-100 p-6 rounded-lg shadow mb-4 shadow transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-xl text-blue-800 font-bold cursor-pointer hover:text-red-500" onclick="toggleServiceDetails(this)">Lifeboat Maintenance</h3>
+            <p class="hidden mt-2 text-gray-700">
+                Ensuring the safety of life at sea with certified lifeboat inspections, repairs, and maintenance,
+                adhering to international safety standards. Our key services include routine lifeboat inspections, load
+                testing and certification, and repair and spare parts supply.</p>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-blue-800 text-white py-4">
+    <div class="container mx-auto text-center">
+        <p>&copy;2025 Wallem ShipManagement India pvt Ltd. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

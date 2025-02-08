@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallem Shipmangement</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+<body class=" bg-gray-100 font-sans">
+
+<!-- Navigation bar -->
+<nav class="bg-blue-800 text-white p-4 w-full fixed top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Wallem Shipmangement</h1>
+        <ul class="hidden md:flex  space-x-6">
+            <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+            <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+
+        </button>
+
+    </div>
+</nav>
+
+<!--Hero section-->
+<section id="home" class="bg-cover bg-center h-screen flex items-center justify-center"
+         style="background-image:url('./img/bg-ship.jpg')">
+    <div
+            class="p-10 bg-black/50 rounded-lg hover:bg-black/75">
+        <h2
+                class="text-white text-5xl font-bold mb-4">Explore The World With Wallem Group</h2>
+        <p
+                class="text-white text-lg mb-6"
+        > Providing world-class shipping services across the globe</p>
+        <a href="#services" class="bg-blue-700/45 text-white px-6 py-3 rounded-sm hover:bg-blue-500  focus:bg-cyan-900 focus:text-yellow-300 transition duration-300 hover:font-bold">Discover More</a>
+    </div>
+</section>
+
+<!--Services sections-->
+<section id="services" class="py-14 bg-white">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div id="main-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div id="card1" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:bg-green-200 transform transition-transform duration-300 hover:scale-105">
+                <img src="./img/marine-logistics.jpeg" alt="Marine Logistics" class="w-full h-60 object-cover rounded-t-lg mb-4 ">
+                <h3 class="text-xl font-bold mb-2">Marine Logistics</h3>
+                <p>Providing seamless logistics solutions for global marine operations, ensuring efficient cargo handling and timely delivery at every port.</p>
+            </div>
+            <div id="card2" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:bg-green-200 transform transition-transform duration-300 hover:scale-105">
+                <img src="./img/tanker.webp" alt="tanker" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-bold mb-2">Ship Management</h3>
+                <p>Comprehensive ship management services, focusing on safety, compliance, and operational excellence for a smooth sailing experience</p>
+            </div>
+            <div id="card3" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:bg-green-200 transform transition-transform duration-300 hover:scale-105">
+                <img src="./img/lifeboat.jpeg" alt="lifeboat" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-bold mb-2">LifeBoat services</h3>
+                <p>Ensuring the safety of life at sea with certified lifeboat inspections, repairs, and maintenance, adhering to the highest standards</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>&copy;2025 Wallem ShipManagement India pvt Ltd. All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
