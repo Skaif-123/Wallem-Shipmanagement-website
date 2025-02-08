@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Wallem Shipmanagement</title>
     <link rel="stylesheet" href="./output.css">
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.querySelector('nav ul');
+            let navnaming = document.querySelectorAll('li a');
+            const titlename=document.querySelector('.pagetitle');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('block');
+            titlename.classList.toggle('hidden');
+
+            navnaming.forEach(links=>{
+                links.classList.toggle('text-xl');
+                links.classList.toggle('font-bold');
+                links.classList.toggle('text-center');
+            })
+        })
+        function toggleServiceDetails(element){
+            const details=element.nextElementSibling;
+            details.classList.toggle('hidden');
+            details.classList.toggle('block');
+        }
+    </script>
 </head>
 <body class="bg-gray-100 font-sans">
 <!-- Navigation -->
